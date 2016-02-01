@@ -1,35 +1,33 @@
-$(document).ready(function(){
+var inventory = [];
 
-var inventory = []
+var currentLocation = lobby;
 
-var currentLocation = lobby
-
-function location (description) {
+function Location(description) {
       this.description = description;
   };
 
-   var lobby = new location ('You are in the lobby of the epicodus building. There is an elevator and a bored security guard playing solitaire on his computer');
+   var lobby = new Location ('You are in the lobby of the epicodus building. There is an elevator and a bored security guard playing solitaire on his computer.');
 
-    var Office = new location ('A huge room full of epicodus students working hard on their various projects');
+    var office = new Location ('A huge room full of epicodus students working hard on their various projects');
 
-    var security_guard = new location ("the security guard eyes you suspiciously.")prompt("are you an epicodus student?")
+    var securityGuard = new Location ("the security guard eyes you suspiciously.");
 
     function item(description){
       this.description = description;
     };
 
-    var epicodus_ID = new item "You are holding a dull plastic epicodus keycard in your hand."
+    var epicodusId = new item ("You are holding a dull plastic epicodus keycard in your hand.");
 
-    if (currentLocation ===  security_guard && prompt === "yes") {inventory.push(epicodus_ID + "the guard sighs and points behind you. 'Here is an id card. Take the elevator over there'")
-    } else if (prompt === "no") {
-        return security_guard
-    }
+    // if (currentLocation ===  securityGuard && prompt === "yes") {inventory.push(epicodusId + "the guard sighs and points behind you. 'Here is an id card. Take the elevator over there'")
+    // } else if (prompt === "no") {
+    //     return securityGuard
+    // }
 
-    if(currentLocation === )
+$(document).ready(function(){
+    $("#startingRoom").text(lobby.description);
 
-
-
-
+    event.preventDefault();
+  });
 
 // //
 // //

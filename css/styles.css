@@ -43,3 +43,8 @@ h1 {
 
   font-size:14pt;
 }
+#startingRoom {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px
+}
