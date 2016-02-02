@@ -16,7 +16,7 @@ function Location(description) {
       this.description = description;
   };
 
-   var lobby = new Location ('You are in the lobby of the epicodus building. There is an elevator and a bored security guard playing solitaire on his computer.');
+   var lobby = new Location ('You are in the lobby of the epicodus building. There is an elevator and a bored security guard playing solitaire on his computer.  (ENTER the elevator or TALK to the Security Guard.)');
 
     var office = new Location ('A huge room full of epicodus students working hard on their various projects');
 

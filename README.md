@@ -2,11 +2,11 @@
 
 #### _Introduction: ,date_
 
-#### By _**Austin J. Minnon**_
+#### By _**Austin J. Minnon**, **Chris Berry** , **Conner Belvin**, **Lawton**_
 
 ## Description:
 
-_Description:_
+_This is a word based game that uses objects to represent rooms and allows a player to move from one room to another room by inputting different commmands.
 
 ## Setup/Installation Requirements
 
