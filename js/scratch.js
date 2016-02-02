@@ -16,6 +16,7 @@ var fithFloor = new Location ('You have now entered the fith floor of the SW 400
 var fithFloorExplore = new Location ('As you approach the door you notice that the room is gitting smaller and smaller. You open up the door and slide down a long dark tunnel. A dim lite at the end of the tunnel shows a sign for D+H headquarters. You enter the main office and there he is. Dracula and his henchmen...You have become a meal. You lose. lol')
 var sixthFloor = new Location ('You have now entered the sixth floor of the SW 400 building on sixth street. This is the home of DCI Engineers.(Explore the Floor, or RETURN to elevator)')
 var sixthFloorExplore = new Location ('')
+<<<<<<< HEAD
 var seventhFloor = new Location ('You have now entered the seventh floor of the SW 400 building on sixth street, this is the former headquarters of Camera World.(Explore the Floor, or RETURN to elevator)')
 var seventhFloorExplore = new Location('Old sun faded picture, line the hall. A dull hum of the overhead lights is the only thing that can be heard. The smartphone has killed the camera industry(Return to elevator)')
 var eighthFloor = new Location ('You have now entered the eighth floor of the SW 400 building on sixth street. No sign marks this floor, large wood panneling with hidden lights ligns the walls opposite you. (Explore the Floor, or RETURN to elevator)')
@@ -27,3 +28,10 @@ var tenthFloorExplore = new Location ('Throx helps customers fight the infamous 
 
 var elevenththFloor = new Location ('You have now entered the top floor of the SW 400 building on sixth street, the home of Suzanne Casmentos "Fantasy Dating Game" (Explore the Floor, or RETURN to elevator)')
 var eleventhFloorExplore = new Location ('Fantasy Dating Game is like a grown-up version of "Truth or Dare," and it might be more interesting than fantasy football league. If your sick and tired of your  lackluster love life this could be the place for you. Much like fantasy sports leagues, the Fantasy Dating Game allows single women to earn points by flirting with guys at Starbucks, slipping their numbers to cute bartenders and going on actual dates. You get a crippling VD and can not continue.')
+=======
+var seventhFloor = new Location ('You have now entered the seventh floor of the SW 400 building on sixth street.')
+var eighthFloor = new Location ('You have now entered the eighth floor of the SW 400 building on sixth street.')
+var ninthFloor = new Location ('You have now entered the ninth floor of the SW 400 building on sixth street.')
+var tenthFloor = new Location ('You have now entered the tenth floor of the SW 400 building on sixth street.')
+var elevenththFloor = new Location ('You have now entered the top floor of the SW 400 building on sixth street.')
+>>>>>>> 0482573e19bf60844f87f233fb99107eb9de040c
