@@ -11,7 +11,7 @@ function init(){
       inputCmd.value = "The security guard eyes you suspiciously."
     }
     else if (inputted === "enter") {
-      inputCmd.value = "the elevator hums silently."
+      inputCmd.value = "the elevator hums silently. It is obviously waiting for something."
     }
     else {
       inputCmd.value = "not a valid command."
