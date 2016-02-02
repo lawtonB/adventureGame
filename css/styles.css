@@ -43,8 +43,14 @@ h1 {
 
   font-size:14pt;
 }
-#startingRoom {
+#lobby {
   text-align: center;
   font-weight: bold;
-  font-size: 20px
+  font-size: 20px;
+}
+#securityGuard {
+  display: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
 }

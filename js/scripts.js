@@ -1,6 +1,16 @@
-var inventory = [];
+https://github.com/verkaufer/TextAdventureGame
 
+$(document).ready(function(){
+// business logic
+var inventory = [];
+var commands = ["talk", "use", "enter"];
 var currentLocation = lobby;
+
+// function yourMove()
+//   {
+//    input = document.getElementById("input_form");
+//   }
+//   if ()
 
 function Location(description) {
       this.description = description;
@@ -12,22 +22,31 @@ function Location(description) {
 
     var securityGuard = new Location ("the security guard eyes you suspiciously.");
 
-    function item(description){
-      this.description = description;
-    };
-
-    var epicodusId = new item ("You are holding a dull plastic epicodus keycard in your hand.");
+    // function item(description){
+    //   this.description = description;
+    // };
+    //
+    // var epicodusId = new item ("You are holding a dull plastic epicodus keycard in your hand.");
 
     // if (currentLocation ===  securityGuard && prompt === "yes") {inventory.push(epicodusId + "the guard sighs and points behind you. 'Here is an id card. Take the elevator over there'")
     // } else if (prompt === "no") {
     //     return securityGuard
     // }
 
-$(document).ready(function(){
-    $("#startingRoom").text(lobby.description);
+    // user interface logic
+    $("#lobby").text(lobby.description);
 
-    event.preventDefault();
+     var inputCmd = document.getElementById("input").value;
+
+    $("form#input").submit(function(event) {
+      if (input === commands[0]) {
+        $("#securityGuard").text(securityGuard.description);
+      }else {
+        $("#lobby").text(lobby.description);
+      }
+      event.preventDefault();
   });
+});
 
 // //
 // //
