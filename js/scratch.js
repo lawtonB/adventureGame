@@ -28,10 +28,4 @@ var tenthFloorExplore = new Location ('Throx helps customers fight the infamous 
 
 var elevenththFloor = new Location ('You have now entered the top floor of the SW 400 building on sixth street, the home of Suzanne Casmentos "Fantasy Dating Game" (Explore the Floor, or RETURN to elevator)')
 var eleventhFloorExplore = new Location ('Fantasy Dating Game is like a grown-up version of "Truth or Dare," and it might be more interesting than fantasy football league. If your sick and tired of your  lackluster love life this could be the place for you. Much like fantasy sports leagues, the Fantasy Dating Game allows single women to earn points by flirting with guys at Starbucks, slipping their numbers to cute bartenders and going on actual dates. You get a crippling VD and can not continue.')
-=======
-var seventhFloor = new Location ('You have now entered the seventh floor of the SW 400 building on sixth street.')
-var eighthFloor = new Location ('You have now entered the eighth floor of the SW 400 building on sixth street.')
-var ninthFloor = new Location ('You have now entered the ninth floor of the SW 400 building on sixth street.')
-var tenthFloor = new Location ('You have now entered the tenth floor of the SW 400 building on sixth street.')
-var elevenththFloor = new Location ('You have now entered the top floor of the SW 400 building on sixth street.')
->>>>>>> 0482573e19bf60844f87f233fb99107eb9de040c
+// does this work
