@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- jquery-2.2.0 -->
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <!-- bootstrap w/ optional theme -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <title>Text Adventure</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1><strong>Welcome To Epicodus!</strong></h1>
+        <h3>Our Very First Text Adventure Game.</h3>
+      </div>
+    </div>
+    <div class="well">
+      <h3>How to Play:</h3>
+        <p>Read and follow along with the story and scenarios given to you and see if you can make it out of your first day of epicodus! Use the capitalized words as commands for the text box.</p>
+      </div>
+    <div class="well" id="storyText">
+        <p><span class="description"></span></p>
+    </div>
+    <div class="well" id="securityGuard">
+        <p><span class="description"></span></p>
+    </div>
+    <form id="input" role="form">
+      <div class="form-group">
+        <label for="input">Actions:</label>
+        <input id="textbox" type="text" value="">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <div class="row">
+      <div class="sidebar col-xs-2">
+        <h4>Commands:</h4>
+          <ul>
+            <li>Use (Object Name)</li>
+          </ul>
+
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="sidebar inventory col-xs-2">
+        <h3>Inventory:</h3>
+          <ul class="inventory">
+            <span class="item"></span>
+          </ul>
+      </div>
+    </div>
+  </body>
+</html>
