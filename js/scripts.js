@@ -3,6 +3,7 @@ function init(){
   txtBox.value = "You are in the lobby of the epicodus building. There is an elevator and a bored security guard playing solitaire on his computer.  (ENTER the elevator or TALK to the Security Guard.)";
 }
 var inventory = [];
+<<<<<<< HEAD
 var command = $("input#commandBox").val();
 function updateInventory(command, item){
   if (command === take) {
@@ -12,6 +13,34 @@ function updateInventory(command, item){
   }
 }
 
+=======
+var idCard = inventory[0]
+
+function hasId(item){
+  if(inventory[0] === "IDCARD"){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
+
+//
+
+// function gameOver(){
+//   var newGame = init();
+//   if (command === newGame) {
+//     alert("new game");
+//     window.location.href = "index.html";
+//   }
+// }
+
+
+
+
+
+>>>>>>> 06ba9f6b646b680f8471c36843ae257a8a92f48b
 // function updateInventoryDisplay(newItem, command){
 //   if(command === "take" && newItem === "id"){
 //     $("p #inventory").append("<span p id="'newItem'" class='item'>"+newItem+"</span>");
@@ -53,6 +82,7 @@ function updateInventory(command, item){
 //
 //
 // }
+<<<<<<< HEAD
 //
 //
 //
@@ -76,6 +106,48 @@ function updateInventory(command, item){
     }
     else if (inputted === "take") {
       inputCmd.value = "You are now holding a dull plastic epicodus keycard in your hand. Now you can ENTER the elevator, and it will work."
+=======
+
+function updateInventory(command){
+  if (command === "take") {
+    inventory.push("ID CARD");
+  } else {
+  }
+  console.log(inventory);
+}
+
+// function enterAnswer(){
+//   var inputted = $("input#commandBox").val();
+//   var answerCmd = document.getElementById("storyText");
+// }
+  function enterCommand(){
+    var inputted = $("input#commandBox").val();
+    var inputCmd = document.getElementById("storyText");
+    alert(inputted);
+    if (inputted === "talk") {
+      inputCmd.value = "The security guard eyes you suspiciously. If you think you're so smart, what is the shortcut for clearing the console?"
+    }
+    else if (inputted === "alt k") {
+      inputCmd.value = "Here You go *hands id card*" && updateInventory();
+      console.log(inputted);
+    }
+
+    else if (inputted === "enter" && inventory["IDCARD"]) {
+      inputCmd.value = "The elevator hums silently as you fidgit trying to act like you belong. Ding! the doors open and you walk into the elevator.(press UP or DOWN depending on which direction you would like to go.)"
+    }
+
+    else if (inputted === "enter") {
+      inputCmd.value = "The elevator hums ominously at you. It is obviously waiting for something."
+    }
+
+    else if (inputted === "take") {
+      inputCmd.value = "You are now holding a dull plastic epicodus keycard in your hand. Now you can ENTER the elevator, and it will work.)"
+    }
+    else if (inputted === "newgame") {
+      inputCmd.value = "this is the wrong way to do this"
+      window.location.href = "index.html";
+
+>>>>>>> 06ba9f6b646b680f8471c36843ae257a8a92f48b
     }
     else {
       inputCmd.value = "not a valid command."
@@ -83,6 +155,10 @@ function updateInventory(command, item){
   }
 
 $(document).ready(function(){
+<<<<<<< HEAD
+=======
+  init();
+>>>>>>> 06ba9f6b646b680f8471c36843ae257a8a92f48b
 
   var currentLocation = "Home";
 
@@ -102,6 +178,13 @@ $(document).ready(function(){
     updateDisplay(setMsg);
   }
 
+<<<<<<< HEAD
+=======
+  $("#inputCommands").submit(function(event) {
+    event.preventDefault();
+    enterCommand();
+  });
+>>>>>>> 06ba9f6b646b680f8471c36843ae257a8a92f48b
 
     //clear out the command box
     document.getElementById("commandBox").value = "";
