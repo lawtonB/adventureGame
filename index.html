@@ -5,20 +5,16 @@
 	<title>Epicodus the text adventure</title>
   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="author" content="lawtonB">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-2.2.0.min.js"></script> <!-- get jQuery -->
+		<link rel="stylesheet" href="css/bootstrap.css" media="screen">
+		<script src="js/jquery-2.2.0.min.js"></script> <!-- get jQuery -->
+		<link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js"></script>
 
 
 </head>
 
 <body onload="init()">
-  <div class="container">
-    <div>
-      <p id="inventory">showme
-      </p>
-    </div>
-  </div>
+
 
     <div id="content">
         <h1>Epicodus:<span class="subtitleFont"> A text adventure game</span>  </h1>
@@ -34,6 +30,14 @@
                 <button type="button" onclick="enterCommand()">Enter</button>
 
         </div>
+				<div class="container">
+					<div>
+						<p id="inventory">Inventory</p>
+						<ul>
+							<li></li>
+						</ul>
+					</div>
+				</div>
     </div>
 
 
