@@ -12,6 +12,17 @@ function updateInventory(command, item){
   }
 }
 
+// function gameOver(){
+//   var newGame = init();
+//   if (command === newGame) {
+//     alert("new game");
+//     window.location.href = "index.html";
+//   }
+// }
+
+
+
+
 // function updateInventoryDisplay(newItem, command){
 //   if(command === "take" && newItem === "id"){
 //     $("p #inventory").append("<span p id="'newItem'" class='item'>"+newItem+"</span>");
@@ -75,7 +86,11 @@ function updateInventory(command, item){
       inputCmd.value = "The elevator hums silently as you fidgit trying to act like you belong. Ding! the doors open and you walk into the elevator.(press UP or DOWN depending on which direction you would like to go.)"
     }
     else if (inputted === "take") {
-      inputCmd.value = "You are now holding a dull plastic epicodus keycard in your hand. Now you can ENTER the elevator, and it will work."
+      inputCmd.value = "You are now holding a dull plastic epicodus keycard in your hand. Now you can ENTER the elevator, and it will work.)"
+    }
+    else if (inputted === "newgame") {
+      inputCmd.value = "this is the wrong way to do this"
+      window.location.href = "index.html";
     }
     else {
       inputCmd.value = "not a valid command."

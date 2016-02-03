@@ -4,8 +4,9 @@ var epicodusId = new item ("You are holding a dull plastic epicodus keycard in y
 
 var elevator = new Location ('You have entered the elevator, now select (UP or DOWN depending on which direction you would like to go.)');
 
-var basement = new Location ('You have now entered into the basement of the SW 400 building on sixth street. Here an evil dragon, "Giggles" lives. The only way to defeat Giggles is with a bike to hide behind and a lock to throw at him, you have neither. (RETURN to the elevator, or attempt to FIGHT Giggles.)');
-var fightGiggles = new Location ('YOU FOOL!, you never stood a chance against Giggles, what were you thinking? All of your clothes and hair have been burnt to a crisp. RETURN to elevator');
+var basement = new Location ('You have now entered into the basement of the SW 400 building on sixth street. Here an evil dragon, "Giggles" lives. The only way to defeat Giggles is with a bike to hide behind and a lock to throw at him. (RETURN to the elevator, or attempt to FIGHT Giggles.)');
+var fightGiggles = new Location ('YOU FOOL!, you never stood a chance against Giggles, what were you thinking? All of your clothes and hair have been burnt to a crisp. it is time for a NEW GAME');
+var newGame = new Location ('You choose poorly, start NEW GAME')
 
 var secondFloor = new Location ('You have now entered the second floor of the SW 400 building on sixth street. The Floor is labeled D+H but nobody really knows what that stands for. (EXPLORE the Floor, or RETURN to elevator)');
 var secondFloorExplore = new Location ('You wander deeper into the dimly lit D+H headquarters, you enter the main office and there he is. Dracula and his henchmen...You have become a meal. You lose. lol, RETURN to elevator');
