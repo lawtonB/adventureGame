@@ -1,3 +1,6 @@
+/*div container shows up invisible*/
+
+
 body {
   background-color: #e1ddd9;
   font-size: 12px;
@@ -59,13 +62,6 @@ h4{
     color:#000;
 }
 
-.footer{
-    font-size: 8pt;
-    font-family: Verdana, Arial, Helvetica, SunSans-Regular, Sans-Serif;
-    color:#000;
-    clear:both;
-}
-
 #mainTextbox{
     width:50%;
     height:300px;
@@ -100,74 +96,6 @@ p.headings{
     text-shadow: 1px 1px 1px #C0C0C0;
 }
 
-#score{
-    color:#000;
-    font-size:2.5em;
-    text-align:center;
-    text-shadow: 1px 1px 1px #000;
-}
-
-.scoreHead{
-  color:#6F807C;
-}
-
 #push{
   height:115px;
 }
-
-/*.row {
-  height: 75%;
-}
-
-.sidebar {
-  padding-left: 20px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  background-color: teal;
-  max-width: 200px;
-  min-width: 200px;
-  min-height: 205px;
-  max-height: 100%;
-  height: 100%;
-}
-
-.jumbotron {
-  background-image: image();
-}
-
-p {
-  text-align: center;
-  font-size: 18px;
-}
-
-h3 {
-  text-align: center;
-}
-h1 {
-  text-align: center;
-}
-
-.well {
-  min-height: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: lightgrey;
-}
-
-#input {
-  text-align: center;
-  height:100px;
-
-  font-size:14pt;
-}
-#lobby {
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-}
-#securityGuard {
-  display: none;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-}*/
