@@ -86,6 +86,7 @@ function updateInventory(command){
   function enterCommand(){
     var inputted = $("input#commandBox").val();
     var inputCmd = document.getElementById("storyText");
+    alert(inputted);
     if (inputted === "talk") {
       inputCmd.value = "The security guard eyes you suspiciously. If you think you're so smart, what is the shortcut for clearing the console?"
     }
@@ -100,6 +101,7 @@ function updateInventory(command){
 
     else if (inputted === "enter") {
       inputCmd.value = "The elevator hums ominously at you. It is obviously waiting for something."
+    }
 
     else if (inputted === "take") {
       inputCmd.value = "You are now holding a dull plastic epicodus keycard in your hand. Now you can ENTER the elevator, and it will work.)"
@@ -115,6 +117,7 @@ function updateInventory(command){
   }
 
 $(document).ready(function(){
+  init();
 
   var currentLocation = "Home";
 
@@ -134,6 +137,10 @@ $(document).ready(function(){
     updateDisplay(setMsg);
   }
 
+  $("#inputCommands").submit(function(event) {
+    event.preventDefault();
+    enterCommand();
+  });
 
     //clear out the command box
     document.getElementById("commandBox").value = "";

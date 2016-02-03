@@ -9,36 +9,30 @@
 		<script src="js/jquery-2.2.0.min.js"></script> <!-- get jQuery -->
 		<link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js"></script>
-
-
 </head>
+<body>
 
-<body onload="init()">
+  <div id="content">
+    <h1>Epicodus:<span class="subtitleFont"> A text adventure game</span>  </h1>
 
-
-    <div id="content">
-        <h1>Epicodus:<span class="subtitleFont"> A text adventure game</span>  </h1>
-
-        <div id="mainTextbox">
-            <textarea class="storyText" id="storyText"></textarea><br>
-        </div>
-
-
-        <div id="inputCommands">
-
-                <input type="text" id="commandBox" placeholder="Enter a command">
-                <button type="button" onclick="enterCommand()">Enter</button>
-								<button type="button" onclick="enterAnswer()">Answer</button>
-        </div>
-				<div class="container">
-					<div>
-						<p id="inventory">Inventory</p>
-						<ul>
-							<li></li>
-						</ul>
-					</div>
-				</div>
+    <div id="mainTextbox">
+      <textarea class="storyText" id="storyText"></textarea><br>
     </div>
+
+    <form id="inputCommands">
+      <input type="text" id="commandBox" placeholder="Enter a command">
+      <button type="submit">Enter</button>
+
+    </form>
+		<div class="container">
+			<div>
+				<p id="inventory">Inventory</p>
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+  </div>
 
 
 
