@@ -1,20 +1,13 @@
-/*div container shows up invisible*/
+/*stripped styles inventory visible, bootstrap enabled
+ready to be styled*/
 
 
 body {
-  background-color: #e1ddd9;
-  font-size: 12px;
-  font-family: Courier New, Courier, Monospace;
-  color:#FCFCE3;
-  padding:5px;
-  margin:0px;
-  margin-top:15px;
-  text-align: center;
-  height:100%;
+
 }
 
 
-#content {
+/*#content {
     text-align: left;
     vertical-align: middle;
     margin: 0px auto;
@@ -23,25 +16,14 @@ body {
     background-color: #ffffff;
     border: 1px dashed #564b47;
     height:100%;
-}
+}*/
 
-#inventory{
+/*#inventory{
   width: 80%px;
   background-color: #fff;
-  clear:both;
-}
+  /*clear:both;*/
+}*/
 
-#inventory p{
-  color:#000;
-  border:1px dashed #000;
-  padding:5px;
-  display:none;
-
-}
-
-.item{
-  padding-left: 25px;
-}
 
 h1{
     font-family: Verdana, Arial, Helvetica, SunSans-Regular, Sans-Serif;
@@ -79,13 +61,17 @@ h4{
 
 }
 
-#commandButtons{
-    width:48%;
-    height:100%;
-    float:right;
+/*textarea {
+  resize:none;
+}*/
 
+/*.storyText {
+  max-width: 150px;
+  max-height: 350px;
+  word-wrap: normal;
+  resize:none;
+}*/
 
-}
 
 p.headings{
     font-family: Verdana, Arial, Helvetica, SunSans-Regular, Sans-Serif;
@@ -96,6 +82,13 @@ p.headings{
     text-shadow: 1px 1px 1px #C0C0C0;
 }
 
-#push{
+/*#commandButtons{
+width:48%;
+height:100%;
+float:right;
+
+
+}*/
+/*#push{
   height:115px;
-}
+}*/
