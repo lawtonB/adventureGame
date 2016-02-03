@@ -3,15 +3,18 @@ function init(){
   txtBox.value = "You are in the lobby of the epicodus building. There is an elevator and a bored security guard playing solitaire on his computer.  (ENTER the elevator or TALK to the Security Guard.)";
 }
 var inventory = [];
-var command = $("input#commandBox").val();
-function updateInventory(command, item){
-  if (command === take) {
-    inventory.push("ID CARD");
-  } else {
-    return "you need an item, first."
+var idCard = inventory[0]
+
+function hasId(item){
+  if(inventory[0] === "IDCARD"){
+    return true;
+  }
+  else{
+    return false;
   }
 }
 
+//
 // function updateInventoryDisplay(newItem, command){
 //   if(command === "take" && newItem === "id"){
 //     $("p #inventory").append("<span p id="'newItem'" class='item'>"+newItem+"</span>");
@@ -53,29 +56,35 @@ function updateInventory(command, item){
 //
 //
 // }
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-  function enterCommand(){ debugger;
+
+function updateInventory(command){
+  if (command === "take") {
+    inventory.push("ID CARD");
+  } else {
+  }
+  console.log(inventory);
+}
+
+// function enterAnswer(){
+//   var inputted = $("input#commandBox").val();
+//   var answerCmd = document.getElementById("storyText");
+// }
+  function enterCommand(){
     var inputted = $("input#commandBox").val();
     var inputCmd = document.getElementById("storyText");
     if (inputted === "talk") {
-      inputCmd.value = "The security guard eyes you suspiciously, are you an Epicodus student? Do you have an ID to make the elevator work? Here, you will need one of these if you are ever going to go any where in this building. He holds out an ID for you to TAKE"
+      inputCmd.value = "The security guard eyes you suspiciously. If you think you're so smart, what is the shortcut for clearing the console?"
     }
-    else if (inputted === "enter") {
+    else if (inputted === "alt k") {
+      inputCmd.value = "Here You go *hands id card*" && updateInventory();
+      console.log(inputted);
+    }
+
+    else if (inputted === "enter" && inventory["IDCARD"]) {
       inputCmd.value = "The elevator hums silently as you fidgit trying to act like you belong. Ding! the doors open and you walk into the elevator.(press UP or DOWN depending on which direction you would like to go.)"
     }
-    else if (inputted === "take") {
-      inputCmd.value = "You are now holding a dull plastic epicodus keycard in your hand. Now you can ENTER the elevator, and it will work."
+    else if (inputted === "enter") {
+      inputCmd.value = "The elevator hums ominously at you. It is obviously waiting for something."
     }
     else {
       inputCmd.value = "not a valid command."
