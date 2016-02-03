@@ -11,6 +11,8 @@
     <script src="js/scripts.js"></script>
 
 
+
+
 </head>
 
 <body onload="init()">
@@ -22,23 +24,38 @@
         <div id="mainTextbox">
             <textarea class="storyText" id="storyText"></textarea><br>
         </div>
-
-
-        <div id="inputCommands">
+          <div id="inputCommands">
 
                 <input type="text" id="commandBox" placeholder="Enter a command">
-                <button type="button" onclick="enterCommand()">Enter</button>
+                <button  type="button">Enter</button>
+								<a href="#openModal">Open Modal</a>
 
-        </div>
-				<div class="container">
-					<div>
-						<p id="inventory">Inventory</p>
+							</div>
+							<div>
+          <div class="container">
+					<p id="inventory">Inventory</p>
 						<ul>
 							<li></li>
 						</ul>
+
+						<!-- <a href="#openModal">Open Modal</a> -->
+
+         <div id="openModal" class="modalDialog">
+         <div>	<a href="#close" title="Close" class="close">X</a>
+
+        	<h2>You chose</h2>
+
+        <p>the result of the choice
+				</p>
+    </div>
+</div>
 					</div>
 				</div>
     </div>
+
+  </div>
+</div>
+
 
 
 
