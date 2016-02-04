@@ -154,3 +154,62 @@ if (inputted === "talk") {
     }
   });
 }
+
+
+var farmer = new Location('farmer', "the urban marijana farmer looks at you through his cataract glasses.'If you answer my question correctly I will give you one of my many extra bike locks that I use to lock up my farm at night. What is the command to switch apps?'")
+var farmerAnswer = new PussleMessage("the farmer chuckles and says why are you telling me command functions and hands you the bike lock.")
+
+if (inputted === "talk") {
+  inputCmd.value = farmer.name + ": " + farmer.description;
+  $("input#commandBox").val("");
+
+  $("#inputCommands").submit(function(event) {
+    event.preventDefault();
+    var inputted4 = $("input#commandBox").val();
+    if (inputted4 === "alt tab") {
+      $("input#commandBox").val("");
+      console.log("pen");
+      player.inventory.push("bike lock");
+      inputCmd.value = farmer.message;
+    }
+  });
+}
+
+var manager = new Location('manager', "the manager of Throx sits next to a pile of notebooks. 'These notebooks are for my short stories about missing socks and all the adventures they go on, it seems that I am currently out of ideas and I need to search my computer and the internet all at once to find new ideas. If you can tell me a the quick command to go to Spotlight Search, you can have one of my empty notebooks.'")
+var managerAnswer = new PussleMessage("Wow, now I can write about missing socks till I die, die happy, here is an empty notebook, I hope it helps you on your coding journey.")
+
+if (inputted === "talk") {
+  inputCmd.value = manager.name + ": " + manager.description;
+  $("input#commandBox").val("");
+
+  $("#inputCommands").submit(function(event) {
+    event.preventDefault();
+    var inputted5 = $("input#commandBox").val();
+    if (inputted5 === "alt space bar") {
+      $("input#commandBox").val("");
+      console.log("notebook");
+      player.inventory.push("notebook");
+      inputCmd.value = manager.message;
+    }
+  });
+}
+
+
+var suzanne = new Location('suzanne', "the creator of the fantasy dating game pounds on her computer in frustration, she needs to send the information on her computer to her phone and her tablet, her email provider is currently down can you think of the command that will open the air drop folder?")
+var SuzanneAnswer = new PussleMessage("Thank you, now I can roam the streets hunting my next fantasy date, take this bike, and create a fantasy date of your own.")
+
+if (inputted === "talk") {
+  inputCmd.value = suzanne.name + ": " + suzanne.description;
+  $("input#commandBox").val("");
+
+  $("#inputCommands").submit(function(event) {
+    event.preventDefault();
+    var inputted6 = $("input#commandBox").val();
+    if (inputted6 === "alt shift r") {
+      $("input#commandBox").val("");
+      console.log("bike");
+      player.inventory.push("bike");
+      inputCmd.value = suzanne.message;
+    }
+  });
+}
