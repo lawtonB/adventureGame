@@ -1,12 +1,12 @@
-// var lobby = new Location ('You are in the lobby of the epicodus building. There is an elevator and a bored security guard playing solitaire on his computer. (ENTER the elevator or TALK to the Security Guard.)');
-// var secrityGuard = new Location ('The security guard eyes you suspiciously, are you an Epicodus student? Do you have an ID to make the elevator work? Here, you will need one of these if you are ever going to go any where in this building. He holds out an ID for you to TAKE')
-// var epicodusId = new item ("You are holding a dull plastic epicodus keycard in your hand.");
-//
-// var elevator = new Location ('You have entered the elevator, now select (UP or DOWN depending on which direction you would like to go.)');
+var lobby = new Location ('You are in the lobby of the epicodus building. There is an elevator and a bored security guard playing solitaire on his computer. (ENTER the elevator or TALK to the Security Guard.)');
+var secrityGuard = new Location ('The security guard eyes you suspiciously, are you an Epicodus student? Do you have an ID to make the elevator work? Here, you will need one of these if you are ever going to go any where in this building. He holds out an ID for you to TAKE')
+var epicodusId = new item ("You are holding a dull plastic epicodus keycard in your hand.");
+
+var elevator = new Location ('You have entered the elevator, now select (UP or DOWN depending on which direction you would like to go.)');
 
 var basement = new Location ('basement', 'You have now entered into the basement of the SW 400 building on sixth street. Here an evil dragon, "Giggles" lives. The only way to defeat Giggles is with a bike to hide behind and a lock to throw at him. (RETURN to the elevator, or attempt to FIGHT Giggles.)');
 var fightGiggles = new Location ('fightGiggles', 'YOU FOOL!, you never stood a chance against Giggles, what were you thinking? All of your clothes and hair have been burnt to a crisp. it is time for a NEW GAME');
-// var newGame = new Location ('You choose poorly, start NEW GAME')
+var newGame = new Location ('You choose poorly, start NEW GAME')
 
 var secondFloor = new Location ('secondFloor', 'You have now entered the second floor of the SW 400 building on sixth street. The Floor is labeled D+H but nobody really knows what that stands for. (EXPLORE the Floor, or RETURN to elevator)');
 var secondFloorExplore = new Location ('secondFloorExplore', 'You wander deeper into the dimly lit D+H headquarters, you enter the main office and there he is. Dracula and his henchmen...You have become a meal. You lose. lol, RETURN to elevator');
@@ -131,4 +131,26 @@ if (inputted === "elevenththFloor"){
 if (inputted === "eleventhFloorExplore"){
   inputCmd.value = eleventhFloorExplore.name + ": " + eleventhFloorExplore.description;
   $("input#commandBox").val("");
+}
+
+
+
+
+var clown = new Location('clown', "The tall Filipino woman dressed as a clown says'You can have my space pen, yes it rights even when it is upside down, if you can tell me how to minimize the front window to the doc using this keyboard.'")
+var clownAnser = new PussleMessage("the clown is very impressed and hands you the pen, turns and saunters off in true Charlie Chaplin style.")
+
+if (inputted === "talk") {
+  inputCmd.value = clown.name + ": " + clown.description;
+  $("input#commandBox").val("");
+
+  $("#inputCommands").submit(function(event) {
+    event.preventDefault();
+    var inputted3 = $("input#commandBox").val();
+    if (inputted3 === "alt m") {
+      $("input#commandBox").val("");
+      console.log("pen");
+      player.inventory.push("pen");
+      inputCmd.value = clownAnswer.message;
+    }
+  });
 }
