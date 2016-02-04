@@ -13,18 +13,26 @@
 	<body>
 	  <div id="content">
 	    <h1>Epicodus:<span class="subtitleFont"> A text adventure game</span>  </h1>
+       <h5>Story:</h5>
+	      <textarea class="storyText" id="storyText"></textarea><br>
+				<form id="inputCommands">
+	        <input type="text" id="commandBox" placeholder="Enter a command">
+		      <button type="submit">Enter</button>
+		    </form><br>
+				<!-- <h5>Inventory__________________________________Commands________________________________</h5> -->
+				<div class="puzzlebox">
+					<h5>Inventory:</h5>
+					<textarea class="puzzleText" id="puzzleText"></textarea>
+				</div>
 
-	    <div id="mainTextbox">
-	      <textarea class="storyText" id="storyText">Story:</textarea><br>
-				<textarea class="puzzleText" id="puzzleText">Inventory:</textarea>
-				<textarea class="helpText" id="helpText">Commands / Actions:</textarea><br>
-			</div>
-
-	    <form id="inputCommands">
-	      <input type="text" id="commandBox" placeholder="Enter a command">
-				<!-- <input type="text" id="responseBox" placeholder="enter response"> -->
+				<div class="helptext">
+					<h5>Commands:</h5>
+					<textarea class="helpText" id="helpText"></textarea>
+				</div>
+			<!-- <form id="inputCommands">
+        <input type="text" id="commandBox" placeholder="Enter a command">
 	      <button type="submit">Enter</button>
-	    </form>
+	    </form> -->
 <!-- Button trigger modal -->
          <!-- <button id="answer" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Answer</button>
 		  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -34,9 +42,9 @@
                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                <h4 class="modal-title" id="myModalLabel">Answer</h4>
        		</div>
-        </div>
-		  </div>
-		</div> -->
+        <! </div> -->
+
+		</div>
 	</body>
 </html>
 

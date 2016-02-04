@@ -23,10 +23,6 @@ body {
   width: 80%px;
   background-color: #fff;
   /*clear:both;*/
-}*/
-#okay {
-  padding-right: 8%;
-}
 
 h1{
     font-family: Verdana, Arial, Helvetica, SunSans-Regular, Sans-Serif;
@@ -39,7 +35,9 @@ h4{
   font-size:1.5em;
   color:#000;
 }
-
+/*h5{
+  float: right;
+}*/
 .subtitleFont{
     font-size: 8pt;
     font-family: Courier New, Courier, Monospace;
@@ -47,23 +45,19 @@ h4{
     color:#000;
 }
 
-#mainTextbox{
-    width:50%;
-    height:300px;
-    float:left;
-      margin-bottom:20px;
-}
+
 
 .storyText{ /* box-sizing code provided by css-tricks.com. I would have
   never thought that getting a textarea to fill 100% would require -webkit or -moz */
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
-    width:500px;
+    width:600px;
     height:300px;
 
 }
 .puzzleText{
+  float: left;
   -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -71,13 +65,17 @@ h4{
     height:300px;
 }
 .helpText{
+  float: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width:200px;
-  height:300px;
+  width:300px;
+  height:275px;
 }
-
+#inputCommands{
+  position: absolute;
+  align-items: center;
+}
 /*textarea {
   resize:none;
 }*/
