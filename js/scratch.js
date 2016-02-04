@@ -1,3 +1,4 @@
+
 var lobby = new Location ('You are in the lobby of the epicodus building. There is an elevator and a bored security guard playing solitaire on his computer. (ENTER the elevator or TALK to the Security Guard.)');
 var secrityGuard = new Location ('The security guard eyes you suspiciously, are you an Epicodus student? Do you have an ID to make the elevator work? Here, you will need one of these if you are ever going to go any where in this building. He holds out an ID for you to TAKE')
 var epicodusId = new item ("You are holding a dull plastic epicodus keycard in your hand.");
@@ -213,3 +214,21 @@ if (inputted === "talk") {
     }
   });
 }
+
+// var fightGiggles = new Location ('fightGiggles', 'YOU FOOL!, you never stood a chance against Giggles, what were you thinking? All of your clothes and hair have been burnt to a crisp. it is time for a NEW GAME');
+//
+// if (inputted === "fight") {
+//   inputCmd.value = suzanne.name + ": " + suzanne.description;
+//   $("input#commandBox").val("");
+//
+//   $("#inputCommands").submit(function(event) {
+//     event.preventDefault();
+//     var inputted6 = $("input#commandBox").val();
+//     if (inputted6 === "alt shift r") {
+//       $("input#commandBox").val("");
+//       console.log("bike");
+//       player.inventory.push("bike");
+//       inputCmd.value = suzanne.message;
+//     }
+//   });
+// }
