@@ -19,6 +19,20 @@ function PuzzleMessage(message){
   this.message = message;
 };
 
+function commandMessage(message){
+  this.message = message;
+};
+
+
+
+function item(){
+    for(var i=0; i < player.inventory.length ; i++)
+    if (player.inventory.indexOf("IdCard") >= 0){
+        return true;
+    }
+};
+
+
 var guardAnswer = new PuzzleMessage("the guard looks at you with meagre respect in his eyes and slips an IDCARD into your wallet. 'Good job kid, you passed the first test.'")
 
  var lobby = new Location('lobby', "You are in the lobby of the epicodus building. There is an elevator and a bored security guard playing solitaire on his computer. ENTER the elevator, TALK to the Security Guard, or OUTSIDE the building.");
@@ -31,45 +45,67 @@ var guardAnswer = new PuzzleMessage("the guard looks at you with meagre respect 
 
  var outside = new Location('outside', "Outside a homeless man starts yelling at you to take a shower. Humiliated, you slink home. Unfortunately you now have to start a NEW GAME");
 
+ function addIdCard(input) {
+   debugger;
+   var inputCmd = document.getElementById("storyText");
+   if (input === "alt k") {
+     console.log("idCard");
+     player.inventory.push("idCard");
+     inputCmd.value = guardAnswer.message;
+     $("input#commandBox").val("");
+   }
+   else {
+     inputCmd.value = "wrong answer kid";
+   }
+ }
+
+
+
   function enterCommand(){
-    var inputted = $("input#commandBox").val();
-    // var inputtedResponse = $("input#responseBox").val();
-    // var questionAnswer = $("form#modalInput").val();
+    debugger;
+    var input = $("input#commandBox").val();
     var inputCmd = document.getElementById("storyText");
-    // alert(inputted);
-    if (inputted === "talk") {
+    if (input === "talk") {
       inputCmd.value = securityGuard.name + ": " + securityGuard.description;
       $("input#commandBox").val("");
-
-      $("#inputCommands").submit(function(event) {
-        event.preventDefault();
-        var inputted2 = $("input#commandBox").val();
-        if (inputted2 === "alt k") {
-          $("input#commandBox").val("");
-          console.log("idCard");
-          player.inventory.push("idCard");
-          inputCmd.value = guardAnswer.message;
-        }
-      });
-    }
-    if (inputted === "enter") {
-      //player.inventory.contain("idCard"
-      console.log("enter");
-      inputCmd.value = elevatorWithID.name + ": " + elevatorWithID.description;
-    }
-    if (inputted === "enter") {
+    } else if (input === "enter") {
       inputCmd.value = elevator.name + ": " + elevator.description;
+      $("input#commandBox").val("");
     }
-    if (inputted === "new game") {
-      window.location.href = "index.html";
+    else if (input === "alt k") {
+      addIdCard(input);
+      $("input#commandBox").val("");
     }
-    if (inputted === "outside"){
+    function
+    else if (input === "outside"){
       inputCmd.value = outside.name + ": " + outside.description;
+      $("input#commandBox").val("");
+    } else if (input === "enter" && item("Idcard") === true){
+      inputCmd.value = elevatorWithID.name + ": " + elevatorWithID.description;
+      $("input#commandBox").val("");
+    } else if (input === "new game") {
+      window.location.href = "index.html";
+      $("input#commandBox").val("");
     }
-    // else {
-    //   inputCmd.value = "not a valid command."
-    // }
+    else {
+      console.log("something broke");
+    }
+
   }
+    //
+    //   $("#inputCommands").submit(function(event) {
+    //     event.preventDefault();
+    //     var input3 = $("input#commandBox").val();
+    //   if
+    //   } else if (input === "enter") {
+    //     inputCmd.value = elevator.name + ": " + elevator.description;
+    //   }
+    // })
+
+    //
+
+
+
   //clear commandBox
   //user enters response
   //gather the users response and save var
@@ -83,20 +119,15 @@ $(document).ready(function(){
     enterCommand();
   });
 
-    //clear out the command box
-    document.getElementById("commandBox").value = "";
-
-
-  $("form#answerSubmit").submit(function(event) {
-
-    debugger;
-    var inputted = $("input#commandBox").val();
-    // var inputtedResponse = $("input")
-    // var questionAnswer = $("input#modalInput").val();
-    console.log("test");
-    event.preventDefault();
-    enterCommand();
-  });
+  // $("form#answerSubmit").submit(function(event) {
+  //   debugger;
+  //   var input = $("input#commandBox").val();
+  //   // var inputResponse = $("input")
+  //   // var questionAnswer = $("input#modalInput").val();
+  //   console.log("test");
+  //   event.preventDefault();
+  //   enterCommand();
+  // });
 });
 
 // function updateInventoryDisplay(newItem, command){
@@ -121,22 +152,3 @@ $(document).ready(function(){
 //             setMsg = "Error encountered. Please try again.";
 //             updateDisplay(setMsg);
 //             break;
-//     }
-//
-// }
-//
-// //updates #invBox div with new item
-// function updateInventoryDisplay(newItem, action){
-//
-//     if(action === "add" && newItem === "map"){
-//         $("#invBox").append("<span id='"+newItem+"' class='item' onClick='popupMap()'>"+newItem+"</span>");
-//     }
-//     else if(action === "add"){
-//          $("#invBox").append("<span id='"+newItem+"' class='item'>"+newItem+"</span>");
-//     }
-//     else{ //delete the item
-//         $("#"+newItem+"").remove();
-//     }
-//
-//
-// }
