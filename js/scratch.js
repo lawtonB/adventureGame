@@ -42,70 +42,93 @@ var eleventhFloorExplore = new Location ('eleventhFloorExplore', 'Fantasy Dating
 
 if (inputted === "basement"){
   inputCmd.value = basement.name + ": " + basement.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "fightGiggles"){
   inputCmd.value = fightGiggles.name + ": " + fightGiggles.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "secondFloor"){
   inputCmd.value = secondFloor.name + ": " + secondFloor.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "secondFloorExplore"){
   inputCmd.value = secondFloorExplore.name + ": " + secondFloorExplore.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "thirdFloor"){
   inputCmd.value = thirdFloor.name + ": " + thirdFloor.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "thirdFloorExplore"){
   inputCmd.value = thirdFloorExplore.name + ": " + thirdFloorExplore.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "fourthFloor"){
   inputCmd.value = fourthFloor.name + ": " + fourthFloor.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "fourthFloorExplore"){
   inputCmd.value = fourthFloorExplore.name + ": " + fourthFloorExplore.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "fifthFloor"){
   inputCmd.value = fifthFloor.name + ": " + fifthFloor.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "fifthFloorExplore"){
   inputCmd.value = fifthFloorExplore.name + ": " + fifthFloorExplore.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "sixthFloor"){
   inputCmd.value = sixthFloor.name + ": " + sixthFloor.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "sixthFloorExplore"){
   inputCmd.value = sixthFloorExplore.name + ": " + sixthFloorExplore.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "seventhFloor"){
   inputCmd.value = seventhFloor.name + ": " + seventhFloor.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "seventhFloorExplore"){
   inputCmd.value = seventhFloorExplore.name + ": " + seventhFloorExplore.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "eighthFloor"){
   inputCmd.value = eighthFloor.name + ": " + eighthFloor.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "eighthFloorExplore"){
   inputCmd.value = eighthFloorExplore.name + ": " + eighthFloorExplore.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "office"){
   inputCmd.value = office.name + ": " + office.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "ninthFloor"){
   inputCmd.value = ninthFloor.name + ": " + ninthFloor.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "ninthFloorExplore"){
   inputCmd.value = ninthFloorExplore.name + ": " + ninthFloorExplore.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "tenthFloor"){
   inputCmd.value = tenthFloor.name + ": " + tenthFloor.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "tenthFloorExplore"){
   inputCmd.value = tenthFloorExplore.name + ": " + tenthFloorExplore.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "elevenththFloor"){
   inputCmd.value = elevenththFloor.name + ": " + elevenththFloor.description;
+  $("input#commandBox").val("");
 }
 if (inputted === "eleventhFloorExplore"){
   inputCmd.value = eleventhFloorExplore.name + ": " + eleventhFloorExplore.description;
+  $("input#commandBox").val("");
 }
