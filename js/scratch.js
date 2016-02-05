@@ -30,7 +30,7 @@ function item(){
     }
 };
 
-var lobby = new Location('lobby', "You are in the lobby of the epicodus building. There is an elevator and a bored security guard playing solitaire on his computer. ENTER the elevator, TALK TO the Security GUARD, or go OUTSIDE the building.");
+var lobby = new Location('lobby', "You are in the lobby of the epicodus building. There is an elevator and a bored security guard playing solitaire on his computer. ENTER the elevator, TALK TO the Security GUARD, or go OUTSIDE the building(Enter all commands in lower case with correct spacing).");
 
 var securityGuard = new Location('security guard', "The security guard eyes you suspiciously. If you think you're so smart, what is the shortcut for clearing the console? (Remember to spell it out)");
 var guardAnswer = new PuzzleMessage("the guard looks at you with meagre respect in his eyes and slips an IDCARD into your wallet. 'Good job kid, you passed the first test, now you can ENTER the elevator or go OUTSIDE the building.'")
@@ -74,7 +74,7 @@ var guardAnswer = new PuzzleMessage("the guard looks at you with meagre respect 
  var eighthFloor = new Location ('eighthFloor', 'You have now entered the eighth floor of the SW 400 building on sixth street. No sign marks this floor, large wood panneling with hidden lights ligns the walls opposite you. (EXPLORE FLOOR 8, or ENTER the elevator)');
  var eighthFloorExplore = new Location ('eighthFloorExplore', 'Two large glass doors are at the end of the hallway, through the glass you see a few people sitting on couches with laptops who look to relaxed to be getting paid. (go to OFFICE or ENTER the elevator)');
  var office = new Location ('office', 'A huge room full of epicodus students working hard on their various projects (SIT down at a computer, or CHOOSE a partner for the day.)');
- var sit = new Location ('sit', 'You sit down and start up a computer cool coding kid after cool coding kid walks by talking with a partner. You missed your chance to have a partner, you group has an odd number today and now you are going to code for the next eight hours wich burns out your brain and you fail the code review at the end of the week.');
+ var sit = new Location ('sit', 'You sit down and start up a computer. Cool coding kid after cool coding kid walks by talking with a partner. You missed your chance to have a partner, you group has an odd number today and now you are going to code for the next eight hours wich burns out your brain and you fail the code review at the end of the week. You choose poorly start a NEW GA');
  var partner = new Location ('partner', 'Your eyes dart around the room, you are trying not to look like the loneliest person on the planet. Just before you give up to go find a computer you hear, "Do you have a partner yet?" The two of you find a computer, you talk about what your plan is for the day, and you both have the best day coding ever. Now if you can find a pen and a notebook you will be sure to pass this weeks code review.');
 
  var ninthFloor = new Location ('ninthFloor', 'You have now entered the ninth floor of the SW 400 building on sixth street. A man with a bright red mohawk walks by with a laptop.(EXPLORE FLOOR 9, or ENTER the elevator)');
@@ -283,7 +283,7 @@ var guardAnswer = new PuzzleMessage("the guard looks at you with meagre respect 
     } else if (input === "choose" && player.inventory[0] === "idCard"){
         inputCmd.value = partner.name + ": " + partner.description;
         $("input#commandBox").val("");
-    }
+    } else {}
   }
   function fifthLevel() {
     var input = $("input#commandBox").val();
