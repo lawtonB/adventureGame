@@ -33,7 +33,7 @@ function item(){
 var lobby = new Location('lobby', "You are in the lobby of the epicodus building. There is an elevator and a bored security guard playing solitaire on his computer. ENTER the elevator, TALK TO the Security GUARD, or go OUTSIDE the building.");
 
 var securityGuard = new Location('security guard', "The security guard eyes you suspiciously. If you think you're so smart, what is the shortcut for clearing the console? (Remember to spell it out)");
-var guardAnswer = new PuzzleMessage("the guard looks at you with meagre respect in his eyes and slips an IDCARD into your wallet. 'Good job kid, you passed the first test, now you can ENTER the elevator.'")
+var guardAnswer = new PuzzleMessage("the guard looks at you with meagre respect in his eyes and slips an IDCARD into your wallet. 'Good job kid, you passed the first test, now you can ENTER the elevator or go OUTSIDE the building.'")
 
  var elevator = new Location('elevator', "The elevator hums ominously at you. It is obviously waiting for something.");
  var elevatorWithID = new Location('elevator', "You wait around for a moment. DING! Your keycard flashes and the elevator starts to move. Which FLOOR?");
@@ -50,7 +50,7 @@ var guardAnswer = new PuzzleMessage("the guard looks at you with meagre respect 
  var newGame = new Location ('You choose poorly, start NEW GAME')
 
  var secondFloor = new Location ('secondFloor', 'You have now entered the second floor of the SW 400 building on sixth street. The Floor is labeled D+H but nobody really knows what that stands for. (EXPLORE FLOOR 2, or ENTER the elevator)');
- var secondFloorExplore = new Location ('secondFloorExplore', 'You wander deeper into the dimly lit D+H headquarters, you enter the main office and there he is. Dracula and his henchmen...You have become a meal. You lose. lol, ENTER the elevator');
+ var secondFloorExplore = new Location ('secondFloorExplore', 'You wander deeper into the dimly lit D+H headquarters, you enter the main office and there he is. Dracula and his henchmen...You have become a meal. You lose. lol, start a NEW GAME');
 
  var thirdFloor = new Location ('thirdFloor', 'You have now entered the third floor of the SW 400 building on sixth street, home of the Portland Clowning bootcamp. (EXPLORE FLOOR 3, or ENTER the elevator)');
  var thirdFloorExplore = new Location ('thirdFloorExplore', 'Large empty shoes and wigs are strewn about the floor. The seal that was waiting in the elevator with the ball bouncing on its nose slides past you and dissapears around a corner. Clowns come arond the corner...TALK TO the CLOWN or ENTER the elevator');
@@ -78,7 +78,7 @@ var guardAnswer = new PuzzleMessage("the guard looks at you with meagre respect 
  var partner = new Location ('partner', 'Your eyes dart around the room, you are trying not to look like the loneliest person on the planet. Just before you give up to go find a computer you hear, "Do you have a partner yet?" The two of you find a computer, you talk about what your plan is for the day, and you both have the best day coding ever. Now if you can find a pen and a notebook you will be sure to pass this weeks code review.');
 
  var ninthFloor = new Location ('ninthFloor', 'You have now entered the ninth floor of the SW 400 building on sixth street. A man with a bright red mohawk walks by with a laptop.(EXPLORE FLOOR 9, or ENTER the elevator)');
- var ninthFloorExplore = new Location ('ninthFloorExplore', 'This might be the home of Impact Dialing, you will never know because as soon as you step off the elevator you are sucked into a coding loop that never ends, ENTER the elevator');
+ var ninthFloorExplore = new Location ('ninthFloorExplore', 'This might be the home of Impact Dialing, you will never know because as soon as you step off the elevator you are sucked into a coding loop that never ends, start a NEW GAME');
 
  var tenthFloor = new Location ('tenthFloor', 'You have now entered the tenth floor of the SW 400 building on sixth street. This is the reginal office for Throx.(EXPLORE FLOOR 10, or ENTER the elevator)');
  var tenthFloorExplore = new Location ('tenthFloorExplore', 'Throx helps customers fight the infamous sock monster by selling socks in threes, not pairs. That way, when you lose one, you still got a backup sock to keep the other company, so you can keep wearing your favorite pair and doing your laundry worry free. Unfortunatly socks are always made in pairs so all of the extra socks have turned into a giant ball that roams the halls, so do not waste time on this floor. You notice a man in back corner office waving to get your attention. As you approach you see manager on the door. TALK TO the MANAGER or ENTER the elevator');
