@@ -35,7 +35,7 @@ var lobby = new Location('lobby', "You are in the lobby of the epicodus building
 var securityGuard = new Location('security guard', "The security guard eyes you suspiciously. If you think you're so smart, what is the shortcut for clearing the console? (Remember to spell it out)");
 var guardAnswer = new PuzzleMessage("the guard looks at you with meagre respect in his eyes and slips an IDCARD into your wallet. 'Good job kid, you passed the first test, now you can ENTER the elevator or go OUTSIDE the building.'")
 
- var elevator = new Location('elevator', "The elevator hums ominously at you. It is obviously waiting for something.");
+ var elevator = new Location('elevator', "The elevator hums ominously at you. It is obviously waiting for something, maybe you need an IdCard to make it work. TALK TO the GUARD or go OUTSIDE.");
  var elevatorWithID = new Location('elevator', "You wait around for a moment. DING! Your keycard flashes and the elevator starts to move. Which FLOOR?");
 
  var outside = new Location('outside', "Outside a homeless man starts yelling at you to take a shower. Humiliated, you slink home. Unfortunately you now have to start a NEW GAME");
