@@ -147,6 +147,7 @@ var guardAnswer = new PuzzleMessage("the guard looks at you with meagre respect 
 
   function enterCommand(){
     var input = $("input#commandBox").val();
+    input = input.toLowerCase();
     var inputCmd = document.getElementById("storyText");
 
     if (input === "talk to guard") {
@@ -172,6 +173,7 @@ var guardAnswer = new PuzzleMessage("the guard looks at you with meagre respect 
   }
   function secondLevel() {
     var input = $("input#commandBox").val();
+    input = input.toLowerCase();
     var inputCmd = document.getElementById("storyText");
   if (input === "floor 8" && player.inventory[0] === "idCard"){
       inputCmd.value = eighthFloor.name + ": " + eighthFloor.description;
@@ -211,7 +213,9 @@ var guardAnswer = new PuzzleMessage("the guard looks at you with meagre respect 
 
   function thirdLevel() {
     var input = $("input#commandBox").val();
+    input = input.toLowerCase();
     var inputCmd = document.getElementById("storyText");
+
   if (input === "explore floor 8" && player.inventory[0] === "idCard"){
       inputCmd.value = eighthFloorExplore.name + ": " + eighthFloorExplore.description;
       $("input#commandBox").val("");
@@ -273,6 +277,7 @@ var guardAnswer = new PuzzleMessage("the guard looks at you with meagre respect 
   }
   function fourthLevel() {
     var input = $("input#commandBox").val();
+    input = input.toLowerCase();
     var inputCmd = document.getElementById("storyText");
   if (input === "office" && player.inventory[0] === "idCard"){
       inputCmd.value = office.name + ": " + office.description;
