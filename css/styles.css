@@ -1,11 +1,11 @@
 /*stripped styles inventory visible, bootstrap enabled
 ready to be styled*/
 
-}
 
-body {
+/*body {
+  background-color: grey;
 
-}
+}*/
 
 
 /*#content {
@@ -44,49 +44,48 @@ h4{
     text-decoration:underline;
     color:#000;
 }
+/*.storytext {*/
+  /*width: 300px;
+  height: 100px;*/
+  /*background-color: grey;
+  box-shadow: 10px 10px 5px black;*/
+/*div {
+  width: 300px;
+  height: 100px;
+  background-color: grey;
+  box-shadow: 10px 10px 5px #0000ff;
+}*/
 
-
-
-.storyText{ /* box-sizing code provided by css-tricks.com. I would have
+/*.storyText{ /* box-sizing code provided by css-tricks.com. I would have
   never thought that getting a textarea to fill 100% would require -webkit or -moz */
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;         /* Opera/IE 8+ */
-    width:600px;
-    height:300px;
+	/*-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */*/
+	/*-moz-box-sizing: border-box;    /* Firefox, other Gecko */*/
+	/*box-sizing: border-box;         /* Opera/IE 8+ */*/
+    /*width:600px;
+    height:300px;*/*/
 
-}
-.puzzleText{
+/*.puzzleText{
   float: left;
   -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
     width:300px;
     height:300px;
-}
-.helpText{
+}*/
+/*.helpText{
   float: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width:300px;
   height:275px;
-}
-#inputCommands{
+}*/
+/*#inputCommands{
   position: absolute;
   align-items: center;
-}
-/*textarea {
-  resize:none;
 }*/
 
-/*.storyText {
-  max-width: 150px;
-  max-height: 350px;
-  word-wrap: normal;
-  resize:none;
-}*/
-.modalDialog {
+/*.modalDialog {
     position: fixed;
     font-family: Arial, Helvetica, sans-serif;
     top: 0;
@@ -100,12 +99,12 @@ h4{
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     pointer-events: none;
-}
-.modalDialog:target {
+}*/
+/*.modalDialog:target {
   opacity:1;
    pointer-events: auto;
-}
-.modalDialog > div {
+}*/
+/*.modalDialog > div {
    width: 400px;
    position: relative;
    margin: 10% auto;
@@ -115,8 +114,8 @@ h4{
    background: -moz-linear-gradient(#fff, #999);
    background: -webkit-linear-gradient(#fff, #999);
    background: -o-linear-gradient(#fff, #999);
-}
-.close {
+}*/
+/*.close {
     background: #606061;
     color: #FFFFFF;
     line-height: 25px;
@@ -133,10 +132,10 @@ h4{
     -moz-box-shadow: 1px 1px 3px #000;
     -webkit-box-shadow: 1px 1px 3px #000;
     box-shadow: 1px 1px 3px #000;
-}
-.close:hover {
+}*/
+/*.close:hover {
     background: #00d9ff;
-}
+}*/
 
 p.headings{
     font-family: Verdana, Arial, Helvetica, SunSans-Regular, Sans-Serif;
@@ -146,14 +145,25 @@ p.headings{
     text-align:center;
     text-shadow: 1px 1px 1px #C0C0C0;
 }
+body {
+padding: 30px;
+}
 
-/*#commandButtons{
-width:48%;
-height:100%;
-float:right;
-
-
-}*/
-/*#push{
-  height:115px;
-}*/
+#storyText {
+  background-color: white;
+  font-size: 14;
+  text-decoration-color: black;
+  float: left;
+}
+#puzzleText {
+  background-color: white;
+  font-size: 14;
+  text-decoration-color: black;
+  float: left;
+}
+#helpText {
+  background-color: white;
+  font-size: 14;
+  text-decoration-color: black;
+  float: left;
+}
